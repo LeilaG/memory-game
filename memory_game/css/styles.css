@@ -11,10 +11,6 @@ header {
     padding: 30px 20px 30px 20px;
 }
 
-img {
-    margin: 40px 8 0;
-}
-
 main {
     max-width: 800px;
     margin: 35px auto;
@@ -95,4 +91,9 @@ footer {
 .name {
     color: #F15B31;
     font-weight: 700px;
+}
+
+.cards img {
+    width: 20%;
+    margin: 40px 8px 0;
 }
