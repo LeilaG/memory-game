@@ -23,10 +23,12 @@ var cards = [{
 var cardsInPlay = [];
 
 function checkForMatch() {
-    if (cardsInPlay[0] === cardsInPlay[1]) {
-        console.log("You found a match!");
-    } else {
-        console.log("Sorry, try again.");
+    if (cardsInPlay.length === 2) {
+        if (cardsInPlay[0] === cardsInPlay[1]) {
+            alert("You found a match!");
+        } else {
+            alert("Sorry, try again.");
+        }
     }
 }
 
@@ -42,8 +44,6 @@ function flipCard(image) {
     cardsInPlay.push(currentCardRank)
 
     console.log("User flipped " + currentCardRank);
-    console.log("cardsInPlay: " + cardsInPlay)
-
     checkForMatch();
 }
 
